@@ -1,0 +1,175 @@
+var length = 73920;
+var lengthStart = 31;
+var heightStart = 575;
+
+//height variables
+//rattlesnake
+var a = (2078 * 545 / 6000);
+var b = (918 * 545 / 6000);
+//Poo Poo point
+var c = (2021 * 545 / 6000);
+var d = (163 * 545 / 6000);
+//Serene lake
+var e = (2521 * 545 / 6000);
+var f = (521 * 545 / 6000);
+//Tin cup Joe Falls
+var g = (2000 * 545 / 6000);
+var h = (800 * 545 / 6000);
+//Chain lakes
+var i = (5400 * 545 / 6000);
+var j = (3700 * 545 / 6000);
+//Otter Falls
+var k = (1750 * 545 / 6000);
+var l = (1100 * 545 / 6000);
+//Mt. Si
+var m = (3900 * 545 / 6000);
+var n = (750 * 545 / 6000);
+//Little SI
+var o = (1550 * 545 / 6000);
+var p = (250 * 545 / 6000);
+//Quartz Creek
+var q = (2500 * 545 / 6000);
+var r = (2000 * 545 / 6000);
+//Mailbox Peak
+var s = (4822 * 545 / 6000);
+var t = (822 * 545 / 6000);
+//mt. Pilchuck
+var u = (5327 * 545 / 6000);
+var v = (3027 * 545 / 6000);
+
+//length variables
+var a1 = (4 * 545 / 14);
+var b1 = (7.2 * 545 / 14);
+var c1 = (8.2 * 545 / 14);
+var d1 = (7.4 * 545 / 14);
+var e1 = (8 * 545 / 14);
+var f1 = (11 * 545 / 14);
+var g1 = (8 * 545 / 14);
+var h1 = (4.7 * 545 / 14);
+var i1 = (8 * 545 / 14);
+var j1 = (9.4 * 545 / 14);
+var k1 = (5.4 * 545 / 14);
+
+//hike lines
+
+
+strokeWeight(2);
+//Bandera Mt.
+stroke(255, 170, 0);
+line(lengthStart, heightStart - 167, lengthStart + 311 , heightStart - 475);
+
+//Wallace
+stroke(219, 9, 219);
+line(lengthStart, heightStart - 27, lengthStart + 218, heightStart - 163);
+
+//RattleSnake
+stroke(40, 117, 212);
+line(lengthStart, heightStart - b, lengthStart + a1, heightStart - a);
+
+//Poo Poo point
+stroke(50, 214, 55);
+line(lengthStart, heightStart - d, lengthStart + b1, heightStart - c);
+
+//Serene Lake
+stroke(69, 214, 202);
+line(lengthStart, heightStart - f, lengthStart + c1, heightStart - e);
+
+//Tin cup Joe Falls
+stroke(18, 120, 30);
+line(lengthStart, heightStart - h, lengthStart + d1, heightStart - g);
+
+//Chain lakes
+stroke(122, 199, 22);
+line(lengthStart, heightStart - j, lengthStart + e1, heightStart - i);
+
+//Otter Falls
+stroke(143, 92, 16);
+line(lengthStart, heightStart - l, lengthStart + f1, heightStart - k);
+
+//Mt. Si
+stroke(255, 9, 0);
+line(lengthStart, heightStart - n, lengthStart + g1, heightStart - m);
+
+//Little SI
+stroke(255, 0, 0);
+line(lengthStart, heightStart - p, lengthStart + h1, heightStart - o);
+
+//Quartz Creek
+stroke(158, 14, 14);
+line(lengthStart, heightStart - r, lengthStart + i1, heightStart - q);
+
+//Mailbox Peak
+stroke(199, 199, 14);
+line(lengthStart, heightStart - t, lengthStart + j1, heightStart - s);
+
+//mt. Pilchuck
+stroke(240, 17, 233);
+line(lengthStart, heightStart - v, lengthStart + k1, heightStart - u);
+
+
+//graph
+stroke(10, 1, 1);
+strokeWeight(5);
+line(30,30,30,575);
+line(30,575,575,575);
+
+//labels
+rotate(90);
+fill(0,0,0);
+textSize(15);
+text("Height (ft)", 260,-8);
+
+rotate(-90);
+fill(0,0,0);
+textSize(15);
+text("length (mi)", 300, 593);
+
+text("0" ,13,592);
+text("6000" , 7 , 24);
+text("14" , 576,593);
+
+
+//Waterfall labels
+
+textSize(13);
+
+fill(158, 14, 14);
+text("Quarts Creek" , lengthStart + i1, heightStart - q - 6);
+
+fill(40, 117, 212);
+text("RattleSnake" , lengthStart + a1, heightStart - a);
+
+fill(18, 120, 30);
+text("Tin cup Joe Falls" , lengthStart + d1, heightStart - g +5);
+
+fill(255, 0, 0);
+text("Little SI" , lengthStart + h1, heightStart - o);
+
+fill(219, 9, 219);
+text("Wallace Falls" , -126 + 383, 557 -150 + 5);
+
+fill(122, 199, 22);
+text("Chain lakes" , lengthStart + e1, heightStart - i);
+
+fill(50, 214, 55);
+text("Poo Poo Point" , lengthStart + b1, heightStart - c- 5);
+
+fill(69, 214, 202);
+text("Serene Lake" , lengthStart + c1 + 2, heightStart - e + 9);
+
+fill(219,9,219);
+text("Mt. Pilchuck" , lengthStart + k1, heightStart - u);
+
+fill(255, 9, 0);
+text("Mt. Si" , lengthStart + g1, heightStart - m);
+
+fill(255, 170, 0);
+text("Bandera Mt." , lengthStart + 311 , heightStart - 475);
+
+fill(199, 199, 14);
+text("Mailbox Peak" , lengthStart + j1, heightStart - s);
+
+fill(143, 92, 16);
+text("Otter Falls." , lengthStart + f1, heightStart - k);
+
+
